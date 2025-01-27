@@ -3,17 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo Form</title>
+  <title>Enhanced Demo Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+    }
+
+    .form-container {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+    }
+
+    .form-container:hover {
+      transform: scale(1.02);
+    }
+
+    .form-container h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+
+    .form-container form {
+      display: grid;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: #555;
+    }
+
+    .form-group input {
+      padding: 0.5rem 0.7rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-group input:focus {
+      border-color: #6e8efb;
+      outline: none;
+      box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+    }
+
+    .form-container button {
+      padding: 0.8rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-container button:hover {
+      background: linear-gradient(135deg, #5c79e1, #965bd6);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 1.5rem;
+      }
+
+      .form-container h1 {
+        font-size: 1.5rem;
+      }
+
+      .form-container button {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeYRO_ywXHEghYqzBQ2ounIGZWW-oqrsJJR4GWd-WgOhUgYcA/formResponse" method="get">
-    <label for="input1">Input 1:</label>
-    <input type="text" id="input1" name="entry.1335589215" value="DefaultValue1">
-    <br>
-    <label for="input2">Input 2:</label>
-    <input type="text" id="input2" name="entry.676443499" value="DefaultValue2">
-    <br>
-    <button type="submit">Submit Form</button>
-  </form>
+  <div class="form-container">
+    <h1>Demo Form</h1>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdLbHonbDQUlZw8QVk7yjUWcUWBF-gq7kAH1a33EUCZHs97DQ/formResponse" method="get">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="entry.2012718670" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="doctorName">Doctor Name:</label>
+        <input type="text" id="doctorName" name="entry.649080024" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="speciality">Speciality:</label>
+        <input type="text" id="speciality" name="entry.362754247" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="entry.411778080" value="">
+      </div>
+
+      <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="entry.1529902999" value="">
+      </div>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </div>
+
+  <script>
+    // Function to get the URL parameters
+    function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Pre-fill the input fields based on URL parameters
+    document.getElementById('name').value = getURLParameter('entry.2012718670') || '';
+    document.getElementById('doctorName').value = getURLParameter('entry.649080024') || '';
+    document.getElementById('speciality').value = getURLParameter('entry.362754247') || '';
+    document.getElementById('date').value = getURLParameter('entry.411778080') || '';
+    document.getElementById('time').value = getURLParameter('entry.1529902999') || '';
+  </script>
 </body>
 </html>
