@@ -104,7 +104,7 @@
 
   <div class="form-container">
     <h2>Doctor Information Form</h2>
-    <form>
+    <form id="doctorForm">
       <div class="form-group">
         <label for="entry.2005620554">Country of Origin</label>
         <select id="entry.2005620554" name="entry.2005620554">
@@ -149,6 +149,34 @@
       <button type="submit" class="submit-btn">Submit</button>
     </form>
   </div>
+
+  <script>
+    document.getElementById('doctorForm').addEventListener('submit', function(e) {
+      e.preventDefault();  // Prevent default form submission
+
+      // Get form values
+      var country = document.getElementById('entry.2005620554').value;
+      var specialty = document.getElementById('entry.1045781291').value;
+      var doctor = document.getElementById('entry.1065046570').value;
+      var name = document.getElementById('entry.1166974658').value;
+      var mobile = document.getElementById('entry.839337160').value;
+      var city = document.getElementById('entry.1333877797entry.260883802').value;
+      var state = document.getElementById('entry.260883802').value;
+
+      // Construct query parameters
+      var url = 'https://docs.google.com/forms/d/e/1FAIpQLSfZFtdmfngMBLy5Yr58L-BbfBlvtl2LaU8kW465Pvb7cKa_rQ/viewform?';
+      url += `entry.2005620554=${encodeURIComponent(country)}`;
+      url += `&entry.1045781291=${encodeURIComponent(specialty)}`;
+      url += `&entry.1065046570=${encodeURIComponent(doctor)}`;
+      url += `&entry.1166974658=${encodeURIComponent(name)}`;
+      url += `&entry.839337160=${encodeURIComponent(mobile)}`;
+      url += `&entry.1333877797entry.260883802=${encodeURIComponent(city)}`;
+      url += `&entry.260883802=${encodeURIComponent(state)}`;
+
+      // Redirect to the constructed URL (submit the form data)
+      window.location.href = url;
+    });
+  </script>
 
 </body>
 </html>
