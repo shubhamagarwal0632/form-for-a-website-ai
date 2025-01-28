@@ -14,15 +14,16 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: linear-gradient(135deg, #6e8efb, #a777e3);
     }
 
     .form-container {
-      background: #ffffff;
+      background: darkseagreen;
+      
+      /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
       padding: 2rem;
       border-radius: 16px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      width: 100%;
+      /* width: 100%; */
       max-width: 400px;
       transition: transform 0.3s ease;
     }
@@ -36,11 +37,12 @@
       font-weight: 600;
       margin-bottom: 1.5rem;
       text-align: center;
-      color: #333;
+      color: white;
     }
 
     .form-container form {
       display: grid;
+
     }
 
     .form-group {
@@ -52,7 +54,7 @@
       font-size: 0.9rem;
       font-weight: 600;
       margin-bottom: 0.4rem;
-      color: #555;
+      color: white;
     }
 
     .form-group input {
@@ -73,8 +75,10 @@
       padding: 0.8rem;
       font-size: 1rem;
       font-weight: 600;
+      margin-top: 25px;
       color: #fff;
-      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
+      background-color: darkslategray;
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -103,7 +107,7 @@
 </head>
 <body>
   <div class="form-container">
-    <h1>Demo Form</h1>
+    <h1 style="font-size: 1rem;">Book An Appointment</h1>
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSdLbHonbDQUlZw8QVk7yjUWcUWBF-gq7kAH1a33EUCZHs97DQ/formResponse" method="get">
       <div class="form-group">
         <label for="name">Name:</label>

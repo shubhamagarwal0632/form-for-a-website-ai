@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Form</title>
+</head>
+<body>
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSeYRO_ywXHEghYqzBQ2ounIGZWW-oqrsJJR4GWd-WgOhUgYcA/formResponse" method="get">
+    <label for="input1">Input 1:</label>
+    <input type="text" id="input1" name="entry.1335589215" value="">
+    <br>
+    <label for="input2">Input 2:</label>
+    <input type="text" id="input2" name="entry.676443499" value="">
+    <br>
+    <button type="submit">Submit Form</button>
+  </form>
+
+  <script>
+    // Function to get the URL parameters
+    function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Set the values of the input fields based on the URL parameters
+    document.getElementById('input1').value = getURLParameter('entry.1335589215') || 'DefaultValue1';
+    document.getElementById('input2').value = getURLParameter('entry.676443499') || 'DefaultValue2';
+  </script>
+</body>
+</html>
