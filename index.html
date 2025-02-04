@@ -18,12 +18,9 @@
 
     .form-container {
       background: darkseagreen;
-      
-      /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
       padding: 2rem;
       border-radius: 16px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      /* width: 100%; */
       max-width: 400px;
       transition: transform 0.3s ease;
     }
@@ -42,7 +39,6 @@
 
     .form-container form {
       display: grid;
-
     }
 
     .form-group {
@@ -77,7 +73,6 @@
       font-weight: 600;
       margin-top: 25px;
       color: #fff;
-      /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
       background-color: darkslategray;
       border: none;
       border-radius: 8px;
@@ -134,6 +129,12 @@
         <input type="time" id="time" name="entry.276563448" value="">
       </div>
 
+      <!-- Added Contact Entry field -->
+      <div class="form-group">
+        <label for="contact">Contact Entry:</label>
+        <input type="text" id="contact" name="entry.620570233" value="">
+      </div>
+
       <button type="submit">Submit Form</button>
     </form>
   </div>
@@ -151,6 +152,7 @@
     document.getElementById('speciality').value = getURLParameter('entry.362754247') || '';
     document.getElementById('date').value = getURLParameter('entry.1256975459') || '';
     document.getElementById('time').value = getURLParameter('entry.276563448') || '';
+    document.getElementById('contact').value = getURLParameter('entry.620570233') || ''; // Added script for Contact Entry
   </script>
 </body>
 </html>
