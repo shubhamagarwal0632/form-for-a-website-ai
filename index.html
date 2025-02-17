@@ -21,7 +21,7 @@
       padding: 1rem;
       border-radius: 16px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-      max-width: 400px;
+      max-width: 445px;
       transition: transform 0.3s ease;
     }
 
@@ -53,7 +53,7 @@
       color: black;
     }
 
-    .form-group input {
+    .form-group input, .form-group select {
       padding: 0.2rem 0.5rem;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -61,7 +61,7 @@
       transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .form-group input:focus {
+    .form-group input:focus, .form-group select:focus {
       border-color: #6e8efb;
       outline: none;
       box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
@@ -107,7 +107,7 @@
   <div class="form-container">
     <img src="https://lh4.googleusercontent.com/Kf_u9_PuWlkk8y4AN6FldoLneAfo8dSRbq8ZI_VRRG5PGaR5fK1s4tlGLb_2ZFar00crkBOUvlGtQzIHCYS__Jvy6fv2R1AoOA-p3nMqxFaYtPKCck-jaeHvorP23H-5bstpk1wWdy0=w849" alt="Logo">
     
-     <form action="https://docs.google.com/forms/d/e/1FAIpQLSdLbHonbDQUlZw8QVk7yjUWcUWBF-gq7kAH1a33EUCZHs97DQ/formResponse" method="get">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdLbHonbDQUlZw8QVk7yjUWcUWBF-gq7kAH1a33EUCZHs97DQ/formResponse" method="get">
       <div class="form-group">
         <label for="name">Name:</label>
         <input type="text" id="name" name="entry.2012718670" value="">
@@ -115,7 +115,122 @@
 
       <div class="form-group">
         <label for="doctorName">Doctor Name:</label>
-        <input type="text" id="doctorName" name="entry.649080024" value="">
+        <select name="doctor_name">
+          <option value="Dr. Rajesh Mishra">Dr. Rajesh Mishra - Anaesthesia</option>
+          <option value="Dr. Vijay Mohan Hanjoora">Dr. Vijay Mohan Hanjoora - Anaesthesia</option>
+          <option value="Dr. Y Naveen">Dr. Y Naveen - Anaesthesia</option>
+          <option value="Dr. Narender Kumar">Dr. Narender Kumar - Anaesthesia</option>
+          <option value="Dr. G. Arya Prakash">Dr. G. Arya Prakash - Anaesthesia</option>
+          <option value="Dr. Shelly Mittal">Dr. Shelly Mittal - Anaesthesia</option>
+          <option value="Dr. Amit Jassal">Dr. Amit Jassal - Anaesthesia</option>
+          <option value="Dr. Amit Kalsotra">Dr. Amit Kalsotra - Anaesthesia</option>
+          <option value="Dr. Swati Aggarwal">Dr. Swati Aggarwal - Anaesthesia</option>
+          <option value="Dr. Snehal Deshpande">Dr. Snehal Deshpande - Artemis Special Child Centre</option>
+          <option value="Dr. (Brig.) Anil Khetarpal">Dr. (Brig.) Anil Khetarpal - Blood Centre & Medicine</option>
+          <option value="Dr. Gaurav Dixit">Dr. Gaurav Dixit - BMT</option>
+          <option value="Dr. Lalit Kumar">Dr. Lalit Kumar - BMT</option>
+          <option value="Dr. Sukriti Gupta">Dr. Sukriti Gupta - BMT</option>
+          <option value="Dr. Deepak Jha">Dr. Deepak Jha - Breast Surgery</option>
+          <option value="Dr. Sushant Srivastava">Dr. Sushant Srivastava - Cardio Thoracic and Vascular Surgery</option>
+          <option value="Dr. Amit Kumar Chaurasia">Dr. Amit Kumar Chaurasia - Cardiology</option>
+          <option value="Dr. Kuldeep Arora">Dr. Kuldeep Arora - Cardiology</option>
+          <option value="Dr. Sameer Mehrotra">Dr. Sameer Mehrotra - Cardiology</option>
+          <option value="Dr. Rahul Mehrotra">Dr. Rahul Mehrotra - Cardiology</option>
+          <option value="Dr. Nitin Kumar Parashar">Dr. Nitin Kumar Parashar - Cardiology</option>
+          <option value="Dr. Nadeem U Rehman">Dr. Nadeem U Rehman - Cardiology</option>
+          <option value="Dr. (Col) Balbir Kalra">Dr. (Col) Balbir Kalra - Cardiology</option>
+          <option value="Dr. Arjun S. Shenoi">Dr. Arjun S. Shenoi - Cardiology</option>
+          <option value="Dr. Sanjay Sarup">Dr. Sanjay Sarup - Children's Orthopaedics and Spine Surgery</option>
+          <option value="Dr. Rahul Mehrotra">Dr. Rahul Mehrotra - Clinical Cardiology</option>
+          <option value="Dr. Pradeep Kumar Singh">Dr. Pradeep Kumar Singh - Cosmetic & Plastic Surgery</option>
+          <option value="Dr. Rati Bansal Goel">Dr. Rati Bansal Goel - Critical Care & ICU</option>
+          <option value="Dr. Reshma Tewari">Dr. Reshma Tewari - Critical Care & ICU</option>
+          <option value="Dr. Jeetendra Sharma">Dr. Jeetendra Sharma - Critical Care & ICU</option>
+          <option value="Dr. Mukesh Kumar Gupta">Dr. Mukesh Kumar Gupta - Critical Care & ICU</option>
+          <option value="Dr. Kuldeep Singh">Dr. Kuldeep Singh - Critical Care & ICU</option>
+          <option value="Dr. Anjana Satyajit">Dr. Anjana Satyajit - Dentistry</option>
+          <option value="Dr. Monica Bambroo">Dr. Monica Bambroo - Dermatology & Cosmetology</option>
+          <option value="Dr. Shifa Yadav">Dr. Shifa Yadav - Dermatology & Cosmetology</option>
+          <option value="Dr. Sameer Mehrotra">Dr. Sameer Mehrotra - Electrophysiology</option>
+          <option value="Dr. Nitin Kumar Parashar">Dr. Nitin Kumar Parashar - Electrophysiology</option>
+          <option value="Dr. Ellora Nanda">Dr. Ellora Nanda - Emergency & Trauma Services</option>
+          <option value="Dr. (Col) Suvasish Chakraberty">Dr. (Col) Suvasish Chakraberty - Emergency & Trauma Services</option>
+          <option value="Dr. Rajesh Kumar Singh">Dr. Rajesh Kumar Singh - Emergency & Trauma Services</option>
+          <option value="Dr. Yatin Kukreja">Dr. Yatin Kukreja - Emergency & Trauma Services</option>
+          <option value="Dr. Anjana Kharbanda">Dr. Anjana Kharbanda - Emergency & Trauma Services</option>
+          <option value="Dr. Dheeraj Kapoor">Dr. Dheeraj Kapoor - Endocrinology</option>
+          <option value="Dr. Sumeet Arora">Dr. Sumeet Arora - Endocrinology</option>
+          <option value="Dr. Shashidhar TB">Dr. Shashidhar TB - ENT</option>
+          <option value="Dr. Poonam Gautam">Dr. Poonam Gautam - ENT</option>
+          <option value="Dr. Dilpreet Bajwa">Dr. Dilpreet Bajwa - ENT</option>
+          <option value="Dr. Ashutosh Gupta">Dr. Ashutosh Gupta - Fetal Medicine</option>
+          <option value="Dr. M.A Mir">Dr. M.A Mir - Gastroenterology</option>
+          <option value="Dr. Pawan Rawal">Dr. Pawan Rawal - Gastroenterology</option>
+          <option value="Dr. Sakshi Karkra">Dr. Sakshi Karkra - Gastroenterology</option>
+          <option value="Dr. Bimal Kumar Sahu">Dr. Bimal Kumar Sahu - Gastroenterology</option>
+          <option value="Dr. Atul Rana">Dr. Atul Rana - Gastroenterology</option>
+          <option value="Dr. Kapil Kochhar">Dr. Kapil Kochhar - General & Minimally Invasive Surgery</option>
+          <option value="Dr. Paritosh S Gupta">Dr. Paritosh S Gupta - General & Minimally Invasive Surgery</option>
+          <option value="Dr. Suresh Kumar Chhabra">Dr. Suresh Kumar Chhabra - General & Minimally Invasive Surgery</option>
+          <option value="Dr. Manu Chaudhary">Dr. Manu Chaudhary - General & Minimally Invasive Surgery</option>
+          <option value="Dr. Meenal Thakral">Dr. Meenal Thakral - Geriatric Medicine</option>
+          <option value="Dr. Nutan Agarwal">Dr. Nutan Agarwal - Gynaecological Endocrinology</option>
+          <option value="Dr. Rupinder Sekhon">Dr. Rupinder Sekhon - Gynaecological Oncology</option>
+          <option value="Dr. Amita Naithani">Dr. Amita Naithani - Gynaecological Oncology</option>
+          <option value="Dr. Gaurav Dixit">Dr. Gaurav Dixit - Haematopoietic Stem Cell Transplant</option>
+          <option value="Dr. Sukriti Gupta">Dr. Sukriti Gupta - Haematopoietic Stem Cell Transplant</option>
+          <option value="Dr. Gajanand Yadav">Dr. Gajanand Yadav - Hip and Knee Arthroplasty</option>
+          <option value="Dr. Arpit Jain">Dr. Arpit Jain - Internal Medicine</option>
+          <option value="Dr. P Venkata Krishnan">Dr. P Venkata Krishnan - Internal Medicine</option>
+          <option value="Dr. Seema Dhir">Dr. Seema Dhir - Internal Medicine</option>
+          <option value="Dr. Amit Kumar Chaurasia">Dr. Amit Kumar Chaurasia - Interventional Cardiology</option>
+          <option value="Dr. Kuldeep Arora">Dr. Kuldeep Arora - Interventional Cardiology</option>
+          <option value="Dr. Sameer Mehrotra">Dr. Sameer Mehrotra - Interventional Cardiology</option>
+          <option value="Dr. Arjun S. Shenoi">Dr. Arjun S. Shenoi - Interventional Cardiology</option>
+          <option value="Dr. Kiran Arora">Dr. Kiran Arora - IVF</option>
+          <option value="Dr. Parul Prakash">Dr. Parul Prakash - IVF</option>
+          <option value="Dr. Sarabpreet Singh">Dr. Sarabpreet Singh - IVF</option>
+          <option value="Dr. Namita Jaggi">Dr. Namita Jaggi - Laboratory Services</option>
+          <option value="Dr. Nandini Vasdev">Dr. Nandini Vasdev - Laboratory Services</option>
+          <option value="Dr. Deepa Goel">Dr. Deepa Goel - Laboratory Services</option>
+          <option value="Dr. Vineeta Raina">Dr. Vineeta Raina - Laboratory Services</option>
+          <option value="Dr. Ritika Singla">Dr. Ritika Singla - Laboratory Services</option>
+          <option value="Dr. Puneet Dwevedi">Dr. Puneet Dwevedi - Mental Health and Behavioural Science</option>
+          <option value="Ms. Chhaya Sinha Goel">Ms. Chhaya Sinha Goel - Mental Health and Behavioural Science</option>
+          <option value="Dr. Chandrima Misra">Dr. Chandrima Misra - Nephrology</option>
+          <option value="Dr. Rakesh Agarwal">Dr. Rakesh Agarwal - Nephrology</option>
+          <option value="Dr. Mukesh K Gupta">Dr. Mukesh K Gupta - Neurology</option>
+          <option value="Dr. Rajinder Yadav">Dr. Rajinder Yadav - Neurology</option>
+          <option value="Dr. Kashi Ram">Dr. Kashi Ram - Neurology</option>
+          <option value="Dr. Vishal Bhatia">Dr. Vishal Bhatia - Neurology</option>
+          <option value="Dr. Pooja Gupta">Dr. Pooja Gupta - Obstetrics and Gynaecology</option>
+          <option value="Dr. Puneet Chawla">Dr. Puneet Chawla - Obstetrics and Gynaecology</option>
+          <option value="Dr. Ashish Chugh">Dr. Ashish Chugh - Obstetrics and Gynaecology</option>
+          <option value="Dr. Kanchan Yadav">Dr. Kanchan Yadav - Obstetrics and Gynaecology</option>
+          <option value="Dr. Bharat Bhushan">Dr. Bharat Bhushan - Orthopaedics</option>
+          <option value="Dr. Sandeep Patel">Dr. Sandeep Patel - Orthopaedics</option>
+          <option value="Dr. Vikas Thakur">Dr. Vikas Thakur - Orthopaedics</option>
+          <option value="Dr. Sumit Chauhan">Dr. Sumit Chauhan - Orthopaedics</option>
+          <option value="Dr. Sunil Mehta">Dr. Sunil Mehta - Orthopaedics</option>
+          <option value="Dr. Rajeev Thukral">Dr. Rajeev Thukral - Orthopaedics</option>
+          <option value="Dr. Mahesh Soni">Dr. Mahesh Soni - Orthopaedics</option>
+          <option value="Dr. Sanjay Sharma">Dr. Sanjay Sharma - Orthopaedics</option>
+          <option value="Dr. Swati Soni">Dr. Swati Soni - Paediatrics</option>
+          <option value="Dr. Shikha Gupta">Dr. Shikha Gupta - Paediatrics</option>
+          <option value="Dr. Surendra Kumar">Dr. Surendra Kumar - Paediatrics</option>
+          <option value="Dr. Ramesh Kumar Sharma">Dr. Ramesh Kumar Sharma - Paediatrics</option>
+          <option value="Dr. Suman Sood">Dr. Suman Sood - Paediatrics</option>
+          <option value="Dr. Shubhangi Tandon">Dr. Shubhangi Tandon - Paediatrics</option>
+          <option value="Dr. Reena Bhardwaj">Dr. Reena Bhardwaj - Paediatrics</option>
+          <option value="Dr. Anita Sen">Dr. Anita Sen - Paediatrics</option>
+          <option value="Dr. Satnam Singh">Dr. Satnam Singh - Paediatrics</option>
+          <option value="Dr. Rahul Shukla">Dr. Rahul Shukla - Paediatrics</option>
+          <option value="Dr. Sanjay Chugh">Dr. Sanjay Chugh - Paediatrics</option>
+          <option value="Dr. Suman Soni">Dr. Suman Soni - Paediatrics</option>
+          <option value="Dr. Amit Kumar">Dr. Amit Kumar - Paediatrics</option>
+          <option value="Dr. Praveen Kumar">Dr. Praveen Kumar - Paediatrics</option>
+      </select>
+      
       </div>
 
       <div class="form-group">
@@ -134,7 +249,6 @@
       </div>
 
       <!-- Added Contact Entry field -->
-       textforgithub
       <div class="form-group">
         <label for="contact">Contact</label>
         <input type="text" id="contact" name="entry.620570233" value="">
